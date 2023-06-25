@@ -1,0 +1,31 @@
+#: import menu menu
+
+
+MainWidget:
+
+
+<MainWidget>:
+    menu_widget: menu_widget
+    canvas.before:
+        Rectangle:
+            size: self.size
+            source: "Untitled-2.jpg"
+
+    Label:
+        text: root.score12_txt
+        font_size: dp(20)
+        font_name: 'Helvetica.ttf'
+        size_hint: .14, .15
+        pos_hint: {"x": 0, "top": 1}
+
+    Label:
+        text: root.score_txt
+        font_size: dp(20)
+        font_name: 'Helvetica.ttf'
+        size_hint: .14, .26
+        pos_hint: {"x": 0, "top": 1}
+    
+    
+    
+    MenuWidget:
+        id: menu_widget
